@@ -8,6 +8,7 @@
 // mannual approach (create package.json in the root, creat properties etc)
 // npm init : create package.json step by step
 // npm init -y : create package.json automatically default
+// npm i -D or --save-dev
 
 // Use the dependency. "_" allow to access everything in the dependency(package)
 const _ = require('lodash')

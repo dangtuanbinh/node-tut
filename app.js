@@ -1,11 +1,10 @@
-const amount = 12
+const EventEmitter = require("events");
 
-if (amount < 10) {
-    console.log('small number');
-} else {
-    console.log('large number');
-}
+const customEmitter = new EventEmitter()
 
-console.log(`hey this is my first node app`);
+// "on" will listen for an event, "emit" wil emit an event
+customEmitter.on('response', () => {
+  console.log('data received');
+})
 
-// To run the file in Nodejs. use "node file__name" in terminal
+customEmitter.emit('response')
